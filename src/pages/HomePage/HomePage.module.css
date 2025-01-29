@@ -1,0 +1,14 @@
+.hero {
+  background-image: url("../../assets/images/hero-bg-1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../assets/images/hero-bg-2x.png");
+  }
+}
