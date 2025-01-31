@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistor, store } from "@/redux/store.js";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import reportWebVitals from "@/shared/utils/reportWebVitals.js";
+// import reportWebVitals from "@/shared/utils/reportWebVitals.js";
 import "modern-normalize";
 import App from "@/components/App/App";
 import "./index.css";
@@ -24,4 +24,4 @@ createRoot(document.getElementById("root")).render(
   </StrictMode>
 );
 
-reportWebVitals(console.log);
+// reportWebVitals(console.log);
