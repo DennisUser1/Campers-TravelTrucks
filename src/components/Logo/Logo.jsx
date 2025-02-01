@@ -1,14 +1,14 @@
 import styles from "./Logo.module.css";
 import sprite from "../../assets/icons/sprite.svg";
+import { Link } from 'react-router-dom';
 
-const Logo = () => {
+export default function Logo() {
   return (
-    <a href="/" className={styles.logo}>
-      <svg className={styles.iconLogo}>
+    <Link href="/" className={styles.logo}>
+      <svg className={styles.iconLogo} aria-label={'Logo icon'}>
         <use href={`${sprite}#$icon-logo`} />
       </svg>
-    </a>
+    </Link>
   );
 };
 
-export default Logo;

@@ -24,6 +24,7 @@
 
   --line-height-normal: 1.5rem; /* 24px - for font-size: 20px, 16px; line-height %: 120, 150; */
   --line-height-large: 2rem; /* 32px - for font-size: 24px, 48px; line-height %: 133, 67; */
+  --line-height-extended: 2.8rem; 
 
   /* COLORS */
   --color-main: #101828;
@@ -36,6 +37,8 @@
   --color-button: #e44848;
   --color-button-hover: #d84343;
   --color-rating: #ffc531;
+  --color-header: #1c2c49;
+  --color-header-accent: #152035;
 
   /* BREAKPOINTS */
   --breakpoint-mobile: 23.4375rem;  /* 375px */
@@ -55,6 +58,8 @@
 
   /* TRANSITIONS */
   --transition-time: 180ms;
+  --transition-time-nav: 300ms;
+  --transition-time-mobile-menu: 700ms;
   --transition-timing-function: ease-in-out;
 }
 
@@ -69,7 +74,8 @@ html {
 }
 
 main {
-  min-height: calc(100vh - 4.5rem); /* 72px */
+  /* min-height: calc(100vh - 4.5rem);  /* 72px */
+  min-height: 100vh;
 }
 
 #root {
@@ -83,9 +89,11 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
-.truncate-text {
+.truncateText {
   line-clamp: 1;
   overflow: hidden;
   display: -webkit-box;
@@ -93,8 +101,9 @@ main {
   -webkit-line-clamp: 1;
 }
 
-.prevent-select {
+.preventSelect {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+

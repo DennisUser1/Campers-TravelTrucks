@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    gap: .75rem; /* 12px */
+}
+  
+/* @media screen and (min-width: 48rem) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+} */
+
+.link {
+    transition: text-shadow var(--transition-time-nav), color var(--transition-time-nav);
+}
+
+.link.active,
+.link:hover {
+    text-shadow: .0625rem .0625rem .75rem; /* 1px 1px 12px */
+    color: var(--color-button);
+}

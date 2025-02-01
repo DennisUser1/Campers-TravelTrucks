@@ -8,11 +8,11 @@ const Layout = () => {
     <div>
       <Header />
       <main className="main">
-        <div className="container">
+        {/* <div className="container"> */}
           <Suspense fallback={<Loader />}>
             <Outlet />
           </Suspense>
-        </div>
+        {/* </div> */}
       </main>
     </div>
   );

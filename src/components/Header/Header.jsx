@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Logo from "@/components/Logo/Logo";
 import Navigation from "@/components/Navigation/Navigation";
-import { MobileMenu } from '@/components/MobileMenu/MobileMenu';
+import { MobileMenu } from "@/components/MobileMenu/MobileMenu";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
 import styles from "./Header.module.css";
+// import clsx from "clsx";
 
 export const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -36,7 +37,7 @@ export const Header = () => {
       <Logo />
       {!isMobile && <Navigation />}
 
-      {isMobile && (
+      {isMobile && !isMobileMenuOpen && (
         <button
           className={styles.burgerMenuButton}
           onClick={openMobileMenu}
@@ -49,15 +50,19 @@ export const Header = () => {
 
       {isMobileMenuOpen && (
         <>
-          <button
-            className={styles.closeButton}
-            onClick={closeMobileMenu}
-            aria-label="Close Menu"
-            title="Close Menu"
-          >
-            <IoIosClose />
-          </button>
-          <MobileMenu closeMobileMenu={closeMobileMenu} />
+          {isMobile && (
+            <>
+              <button
+                className={styles.closeButton}
+                onClick={closeMobileMenu}
+                aria-label="Close Menu"
+                title="Close Menu"
+              >
+                <IoIosClose />
+              </button>
+              <MobileMenu closeMobileMenu={closeMobileMenu} />
+            </>
+          )}
         </>
       )}
     </header>

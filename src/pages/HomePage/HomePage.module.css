@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -10,5 +11,36 @@
   (min-resolution: 2dppx) {
   .hero {
     background-image: url("../../assets/images/hero-bg-2x.png");
+  }
+}
+
+.hero > :global(.container) {
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  color: var(--color-inputs);
+}
+
+.titleMain {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.displayText {
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-extended);
+}
+
+.subtitle {
+  font-size: var(--font-size-xxl);
+  margin-top: 1rem; /* 16px */
+  margin-bottom: 2.5rem; /* 40px */
+}
+
+@media screen and (min-width: 48rem) {
+  .titleMain {
+    line-height: var(--line-height-large); 
   }
 }
