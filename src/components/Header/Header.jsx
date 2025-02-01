@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Logo from "@/components/Logo/Logo";
 import Navigation from "@/components/Navigation/Navigation";
 import { MobileMenu } from "@/components/MobileMenu/MobileMenu";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
 import styles from "./Header.module.css";
-// import clsx from "clsx";
 
 export const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -14,13 +13,21 @@ export const Header = () => {
     setIsMobile(window.innerWidth < 768);
   };
 
+  const handleEscKey = useCallback((e) => {
+    if (e.key === "Escape") {
+      closeMobileMenu();
+    }
+  }, []);
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    window.addEventListener("keydown", handleEscKey); 
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("keydown", handleEscKey); 
     };
-  }, []);
+  }, [handleEscKey]);
 
   const openMobileMenu = () => {
     setIsMobileMenuOpen(true);

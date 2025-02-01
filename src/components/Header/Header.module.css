@@ -29,8 +29,8 @@
 .header a {
     font-weight: var(--font-weight-semi-bold);
     display: flex;
-    align-items: flex-end;
-    gap: 0.25rem; /* 4px */
+    align-items: center;
+    gap: 0.625rem; /* 10px */
     transition: text-shadow var(--transition-time-nav);
 }
   
@@ -39,7 +39,7 @@
 }
   
 .header svg {
-    stroke: var(--color-white);
+    /* stroke: var(--color-white); */
     fill: var(--color-white);
 }
   
@@ -86,5 +86,7 @@
 .closeButton:hover svg {
     fill: var(--color-button);
 }
+
+
 
 

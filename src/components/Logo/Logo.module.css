@@ -2,9 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .iconLogo {
-    width: 100px; 
-    height: 100px;
-  }
+}
+
+.iconTruck {
+    width: 38px;
+    height: 38px;
+}
+
+.iconLogo {
+    width: 136px;
+    height: 16px;
+}

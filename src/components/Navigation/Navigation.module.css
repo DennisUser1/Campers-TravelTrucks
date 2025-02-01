@@ -2,15 +2,9 @@ nav {
     display: flex;
     gap: .75rem; /* 12px */
 }
-  
-/* @media screen and (min-width: 48rem) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-} */
 
 .link {
+    font-weight: var(--font-weight-semi-bold);
     transition: text-shadow var(--transition-time-nav), color var(--transition-time-nav);
 }
 
