@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Logo from "@/components/Logo/Logo";
 import Navigation from "@/components/Navigation/Navigation";
+import ThemeButton  from '@/components/ThemeButton/ThemeButton';
 import { MobileMenu } from "@/components/MobileMenu/MobileMenu";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
 import styles from "./Header.module.css";
@@ -43,13 +44,14 @@ export const Header = () => {
     <header className={styles.header}>
       <Logo />
       {!isMobile && <Navigation />}
+      {!isMobile && <ThemeButton />}
 
       {isMobile && !isMobileMenuOpen && (
         <button
           className={styles.burgerMenuButton}
           onClick={openMobileMenu}
-          aria-label="Open Menu"
-          title="Open Burger Menu"
+          aria-label={"Open Menu"}
+          title={'Open Burger Menu'}
         >
           <IoIosMenu />
         </button>
@@ -62,8 +64,8 @@ export const Header = () => {
               <button
                 className={styles.closeButton}
                 onClick={closeMobileMenu}
-                aria-label="Close Menu"
-                title="Close Menu"
+                aria-label={"Close Menu"}
+                title={"Close Menu"}
               >
                 <IoIosClose />
               </button>

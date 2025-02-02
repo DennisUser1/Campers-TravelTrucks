@@ -39,6 +39,7 @@
   --color-rating: #ffc531;
   --color-header: #1c2c49;
   --color-header-accent: #152035;
+  --color-button-theme: #ababb479; 
 
   /* BREAKPOINTS */
   --breakpoint-mobile: 23.4375rem;  /* 375px */
@@ -107,3 +108,25 @@ main {
   user-select: none; /* Standard syntax */
 }
 
+@media (max-width: 48rem) {
+  .container {
+    padding-left: 2rem; /* 32px */
+    padding-right: 2rem; /* 32px */
+  }
+}
+
+/* Styles for Loader from the library Spinkit*/
+
+.sk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 50px;
+  height: 50px;
+}
+
+.sk-grid-cube {
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-button, #e44848);
+}

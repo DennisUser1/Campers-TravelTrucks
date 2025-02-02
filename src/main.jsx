@@ -6,6 +6,7 @@ import { persistor, store } from "@/redux/store.js";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 // import reportWebVitals from "@/shared/utils/reportWebVitals.js";
+import 'spinkit/spinkit.min.css'; 
 import "modern-normalize";
 import App from "@/components/App/App";
 import "./index.css";

@@ -1,17 +1,17 @@
 import styles from "./Logo.module.css";
 import sprite from "../../assets/icons/sprite.svg";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Logo() {
   return (
-    <Link href="/" className={styles.logo}>
+    <NavLink to="/" className={styles.logo}>
        <svg className={styles.iconTruck} aria-label={'Truck icon'}>
         <use href={`${sprite}#icon-truck`} />
       </svg>
       <svg className={styles.iconLogo} aria-label={'Logo icon'}>
         <use href={`${sprite}#icon-logo`} />
       </svg>
-    </Link>
+    </NavLink>
   );
 };
 

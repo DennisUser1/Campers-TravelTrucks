@@ -1,0 +1,13 @@
+.buttonTheme {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-button-theme);
+  border-radius: 50%;
+  padding: .5rem; /* 8px */
+  border: none;
+}
+
+.buttonTheme svg {
+  width: 28px;
+  height: 28px;
+}

@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     min-height: 2.25rem; /* 36px */
-    padding-right: 1.5rem; /* 24px */
-    padding-left: 1.5rem; /* 24px */
+    padding-right: 2rem; /* 32px */
+    padding-left: 2rem; /* 32px */
     padding-top: 0.75rem; /* 12px */
     padding-bottom: 0.75rem; /* 12px */
     color: var(--color-white);
@@ -33,16 +33,16 @@
     gap: 0.625rem; /* 10px */
     transition: text-shadow var(--transition-time-nav);
 }
-  
+
 .header a:hover {
     text-shadow: 0.0625rem 0.0625rem 0.75rem; /* 1px 1px 12px */
 }
-  
+
 .header svg {
     /* stroke: var(--color-white); */
     fill: var(--color-white);
 }
-  
+
 .burgerMenuButton {
     display: flex;
     justify-content: center;
@@ -87,6 +87,13 @@
     fill: var(--color-button);
 }
 
+
+@media screen and (min-width: 48rem) {
+    .header {
+        padding-right: 4rem; /* 64px */
+        padding-left: 4rem; /* 64px */
+    }
+}
 
 
 

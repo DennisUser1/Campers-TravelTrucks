@@ -1,6 +1,7 @@
 nav {
     display: flex;
-    gap: .75rem; /* 12px */
+    flex-wrap: wrap;
+    gap: 1.875rem .75rem; /* 30px 12px */
 }
 
 .link {
@@ -12,4 +13,16 @@ nav {
 .link:hover {
     text-shadow: .0625rem .0625rem .75rem; /* 1px 1px 12px */
     color: var(--color-button);
+}
+
+@media (max-width: 48rem) { 
+    nav {
+      justify-content: flex-start;
+    }
+
+    .link {
+      flex: 1 1 calc(20% - 0.75rem);
+      min-width: calc(30% - 0.75rem);
+      text-align: center;
+    }
 }

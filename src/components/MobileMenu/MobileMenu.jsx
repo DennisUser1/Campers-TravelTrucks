@@ -1,5 +1,6 @@
 import { createPortal } from "react-dom";
 import Navigation from "@/components/Navigation/Navigation";
+import ThemeButton  from '@/components/ThemeButton/ThemeButton';
 import { useState } from "react";
 import styles from "./MobileMenu.module.css";
 
@@ -18,6 +19,7 @@ export const MobileMenu = ({ closeMobileMenu }) => {
       className={`${styles.menuBox} ${isClosing ? styles.close : styles.open}`}
     >
       <Navigation closeMobileMenu={handleClose} />
+      <ThemeButton />
     </div>,
     modalRoot
   );
