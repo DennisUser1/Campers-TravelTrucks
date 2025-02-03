@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export default function Logo() {
   return (
     <NavLink to="/" className={styles.logo}>
-       <svg className={styles.iconTruck} aria-label={'Truck icon'}>
+      <svg className={styles.iconTruck} aria-label={'Truck icon'}>
         <use href={`${sprite}#icon-truck`} />
       </svg>
       <svg className={styles.iconLogo} aria-label={'Logo icon'}>

@@ -40,6 +40,7 @@
   --color-header: #1c2c49;
   --color-header-accent: #152035;
   --color-button-theme: #ababb479; 
+  --color-overlay-background-loader: rgba(0, 0, 0, 0.75);
 
   /* BREAKPOINTS */
   --breakpoint-mobile: 23.4375rem;  /* 375px */
@@ -90,8 +91,8 @@ main {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 4rem;  /* 64px */
+  padding-right: 4rem; /* 64px */
 }
 
 .truncateText {
@@ -120,13 +121,13 @@ main {
 .sk-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  width: 50px;
-  height: 50px;
+  gap: .375rem; /* 6px */
+  width: 3.125rem; /* 50px */
+  height: 3.125rem; /* 50px */
 }
 
 .sk-grid-cube {
-  width: 15px;
-  height: 15px;
+  width: .9375rem; /* 15px */
+  height: .9375rem; /* 15px */
   background-color: var(--color-button, #e44848);
 }

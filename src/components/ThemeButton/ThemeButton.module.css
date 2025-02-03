@@ -8,6 +8,6 @@
 }
 
 .buttonTheme svg {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem; /* 28px */
+  height: 1.75rem; /* 28px */
 }

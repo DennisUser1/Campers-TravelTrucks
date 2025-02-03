@@ -5,11 +5,11 @@
 }
 
 .iconTruck {
-    width: 38px;
-    height: 38px;
+    width: 2.375rem; /* 38px */
+    height: 2.375rem; /* 38px */
 }
 
 .iconLogo {
-    width: 136px;
-    height: 16px;
+    width: 8.5rem; /* 136px */
+    height: 1rem; /* 16px */
 }
